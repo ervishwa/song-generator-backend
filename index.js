@@ -22,11 +22,15 @@ app.post("/getlyrics", async (req, res) => {
     favouriteSport,
   } = req.body;
 
-  let song = `In a world adorned with laughter and joy, there stands ${name}, a beacon of positivity and light. This ${gender} soul radiates warmth and kindness, making every interaction a delight. With a pet named ${petName}, a loyal companion with a heart so pure, ${name} embarks on adventures, and their bond is the ultimate cure.
+  let song = `In the vibrant tapestry of life, there's a star shining bright named ${name}, whose gender doesn't confine the warmth they ignite. Happy Birthday, dear ${name}, let the celebrations begin, with ${petName} by your side, every moment will be a win.
 
-  From the quirkiest pet antics to the most endearing smiles, ${name} finds joy in the simple pleasures that life compiles. A favorite movie, a cinematic escape, ignites the imagination and transports ${name} to a world where dreams take shape. When the day calls for action, the favorite sport comes alive, and ${name}'s spirit soars, the cheers reaching new heights.
+  From ${whatmakesAngry} to the ${funniestThing}, emotions dance like the wind. Life's journey, unique and wild, a story of ${name}, forever compiled.
   
-  Yet, within the depths of ${name}'s soul, there lies a unique melody—what makes them laugh, what makes them frown. A tapestry of emotions, woven with care, ${name}'s essence is a song, a harmonious affair. So here's to ${name}, a symphony of one, whose story is sung beneath the radiant sun. With a heart full of love and moments so grand, ${name}, you're cherished across the land.`;
+  A ${favouriteMovie}, a cinematic delight, where dreams take flight and laughter ignites. In this realm of joy, ${name} finds their way, making every scene a cherished play.
+  
+  And when the day calls for ${favouriteSport}, ${name}'s favorite pastime leads the way. Victories and defeats, all embraced with glee, in the field of joy, where ${name} is free.
+  
+  Happy Birthday, dear ${name}, a symphony of emotions, a canvas so grand. ${petName} and you, side by side, with what makes you smile, let the celebrations ride. 🎉`;
 
   try {
     let p1 = new Promise((resolve, reject) => {
